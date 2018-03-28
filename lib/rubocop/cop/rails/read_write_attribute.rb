@@ -4,7 +4,11 @@ module RuboCop
   module Cop
     module Rails
       # This cop checks for the use of the read_attribute or
-      # write_attribute methods.
+      # write_attribute methods, and recommends square brackets instead. 
+      #
+      # This recommendation is purely stylistic. There is no functional
+      # difference between eg. [] and read_attribute. The former is implemented
+      # as an alias of the latter.
       #
       # @example
       #
